@@ -145,7 +145,7 @@ impl Database {
                 let table_id = TableRefId::new(schema.id(), table.id());
                 let table = storage.get_table(table_id)?;
                 let txn = table.read().await?;
-                let values = txn.aggreagate_block_stat(&[(
+                let values = txn.aggregate_block_stat(&[(
                     BlockStatisticsType::RowCount,
                     StorageColumnRef::Idx(0),
                 )]);

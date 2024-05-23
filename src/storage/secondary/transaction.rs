@@ -292,7 +292,7 @@ impl SecondaryTransaction {
     /// push-down, and this function will add filter-scan-aggregate functionality.
     ///
     /// This function can gather multiple statistics at a time (in the future).
-    pub fn aggreagate_block_stat(
+    pub fn aggregate_block_stat(
         &self,
         ty: &[(BlockStatisticsType, StorageColumnRef)],
     ) -> Vec<DataValue> {

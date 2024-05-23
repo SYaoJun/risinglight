@@ -6,7 +6,7 @@ This article explains the important types/traits at the storage layer.
 
 ### Array & ArrayBuilder
 
-Data is stored in columns in RisingLight. Here a column is referred to as an "array".  `Array` is a trait over all arrays, specifyng the interface for all arrays. `PrimitiveArray<T>` implements the `Array` trait, where `T` can be `bool`, `i32`, etc. `ArrayImpl` is an enum over different arrays.
+Data is stored in columns in RisingLight. Here a column is referred to as an "array".  `Array` is a trait over all arrays, specifying the interface for all arrays. `PrimitiveArray<T>` implements the `Array` trait, where `T` can be `bool`, `i32`, etc. `ArrayImpl` is an enum over different arrays.
 
 `ArrayBuilder` is a trait over array builders that builds `Array`. Similar to how `PrimitiveArray<T>` implements `Array`, `PrimitiveArrayBuilder<T>` implements `ArrayBuilder`. `ArrayBuilderImpl` is an enum over different array builders.
 
